@@ -43,7 +43,7 @@ Las manzanas con mayor prioridad presentan generalmente:
 
 Los resultados espaciales del modelo pueden ser explorados mediante un visor geográfico desarrollado en ArcGIS Online.
 
-(Insertar enlace del visor)
+(Visor de ArcGIS Online: https://acortar.link/CAHG)
 
 ## Repositorio del proyecto
 
