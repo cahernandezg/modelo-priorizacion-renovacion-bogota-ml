@@ -1,48 +1,62 @@
 # Modelo de priorización de renovación urbana en Bogotá
 
-Este repositorio contiene el desarrollo de un modelo exploratorio para identificar manzanas con potencial de renovación urbana dentro de las Actuaciones Estratégicas del Plan de Ordenamiento Territorial (POT) de Bogotá.
+Este repositorio contiene el código y la documentación del modelo de análisis espacial y aprendizaje no supervisado desarrollado para identificar y priorizar manzanas con potencial de renovación urbana en Bogotá.
 
-El análisis combina análisis espacial, exploración estadística y técnicas de aprendizaje no supervisado para identificar patrones territoriales.
+El proyecto integra análisis exploratorio de datos, técnicas de machine learning no supervisado y herramientas de sistemas de información geográfica para apoyar procesos de planificación territorial basados en evidencia.
+
+## Objetivo del proyecto
+
+Desarrollar un modelo analítico que permita identificar y priorizar manzanas con potencial de renovación urbana mediante la integración de variables urbanas, demográficas y de accesibilidad.
 
 ## Metodología
 
-El modelo se construyó en las siguientes etapas:
+El modelo implementa las siguientes etapas:
 
-1. Preparación y limpieza de datos espaciales
-2. Análisis exploratorio de datos (EDA)
-3. Normalización de variables
-4. Reducción de dimensionalidad mediante PCA
-5. Clustering no supervisado usando K-Means
-6. Clasificación de prioridad de renovación (alta, media, baja)
+1. Análisis exploratorio de datos (EDA)
+2. Normalización de variables urbanas
+3. Reducción de dimensionalidad mediante PCA
+4. Identificación de tipologías urbanas mediante clustering K-Means
+5. Construcción de un índice multicriterio de renovación urbana
+6. Clasificación de manzanas según prioridad de intervención
+7. Integración de resultados en un sistema de información geográfica
 
 ## Variables utilizadas
 
-Las variables incluidas en el modelo representan distintas dimensiones del territorio urbano:
-
-- Área de la manzana
-- Densidad poblacional
-- Número de viviendas
-- Población
-- Distancia a estaciones de TransMilenio
-- Actividad económica (comercio + industria)
 - Viviendas desocupadas
+- Densidad poblacional
+- Población total por manzana
+- Distancia al sistema TransMilenio
+- Mezcla de usos del suelo
 
-## Archivos del repositorio
+## Resultados
 
-- `EDA_MODELO_RENOVACION_F_CAHG.ipynb`  
-  Notebook con el análisis exploratorio, PCA y clustering.
+El modelo permite identificar patrones territoriales dentro del sistema urbano y establecer una clasificación de manzanas según su potencial de renovación urbana.
 
-- `manzanas_final.xlsx`  
-  Base de datos utilizada para el modelo.
+Las manzanas con mayor prioridad presentan generalmente:
 
-- `resultado_clusters.xlsx`  
-  Resultados del modelo con clasificación de prioridad.
+- Mayor presencia de viviendas desocupadas
+- Menor densidad poblacional
+- Mejor accesibilidad al sistema de transporte masivo
+- Mayor diversidad funcional del suelo
 
-## Objetivo
+## Visualización geográfica
 
-El objetivo del modelo es identificar manzanas con mayor potencial de intervención urbana, considerando factores demográficos, espaciales y de accesibilidad.
+Los resultados espaciales del modelo pueden ser explorados mediante un visor geográfico desarrollado en ArcGIS Online.
+
+(Insertar enlace del visor)
+
+## Repositorio del proyecto
+
+Este repositorio incluye:
+
+- Notebook de análisis
+- Código del modelo
+- Procesamiento de datos
+- Resultados del clustering
+- Construcción del índice de priorización
 
 ## Autor
 
-Camila Andrea Hernández  
-Especialización en Estadística Aplicada
+Camila Andrea Hernández González  
+Especialización en Estadística Aplicada  
+Fundación Universitaria Los Libertadores
